@@ -23,13 +23,11 @@
 ## 效果预览图
 ![](LBImagePickerControllerDemo.gif)
 
-
 ## 集成方式
 ### 1.pod集成
 
 ```
 pod 'LBImagePickerController'
-
 ```
 
 ### 2.手动集成
@@ -42,7 +40,7 @@ pod 'LBImagePickerController'
 
 ### 1.图片选择器指定要选择的图片标题
 
-``` objectiveOC
+``` objective-C
 NSArray *titles = @[@"第1张图片",@"第2张图片",@"第3张图片",@"第4张图片"];
 LBImagePickerController *picker = [[LBImagePickerController alloc] initWithPhotoTitles:titles cameraInside:YES];
 picker.LBImagePickerDidFinishPickingPhotosBlock = ^(NSArray<LBAssetModel *> *assetModels, NSArray<UIImage *> *images) {
@@ -53,7 +51,7 @@ picker.LBImagePickerDidFinishPickingPhotosBlock = ^(NSArray<LBAssetModel *> *ass
 
 ### 2.图片选择器只指定要选择的图片数量
 
-``` objectiveOC
+``` objective-C
 LBImagePickerController *picker = [[LBImagePickerController alloc] initWithMaxImagesCount:5 cameraInside:YES];
 picker.LBImagePickerDidFinishPickingPhotosBlock = ^(NSArray<LBAssetModel *> *assetModels, NSArray<UIImage *> *images) {
  
@@ -63,12 +61,12 @@ picker.LBImagePickerDidFinishPickingPhotosBlock = ^(NSArray<LBAssetModel *> *ass
 
 ### 3.对外预览模式
 
-``` objectiveOC
+``` objective-C
 LBPhotoPreviewController *previewVc = [[LBPhotoPreviewController alloc] initWithImages:images];
 previewVc.autoPositionIndex = 0;
 previewVc.didDeletedBlock = ^(NSInteger index,UIImage *image) {     
     };
-    [self presentViewController:previewVc animated:YES completion:nil];
+[self presentViewController:previewVc animated:YES completion:nil];
 ```
 
 ## 备注
