@@ -1,5 +1,12 @@
 # LBImagePickerController
-根据公司项目定制的图片选择器，获取相册部分借鉴了TZImagePickerController，表示感谢，支持iOS7+
+![](https://img.shields.io/badge/build-passing-brightgreen.svg)
+![](https://img.shields.io/badge/license-MIT-blue.svg)
+![](https://img.shields.io/badge/language-Obj--C-orange.svg)
+![](https://img.shields.io/badge/plateform-iOS%207%2B-brightgreen.svg)
+![](https://img.shields.io/badge/pod-1.0.0-orange.svg)
+
+
+根据公司项目定制的图片选择器，获取相册部分借鉴了TZImagePickerController，表示感谢!
 
 
 ## 主要包含以下功能
